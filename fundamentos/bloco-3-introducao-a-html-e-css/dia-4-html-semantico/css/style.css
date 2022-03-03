@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #403D58;
+}
+
 #cabecalho {
     background-color: yellow;
 }
@@ -28,4 +32,50 @@ a:hover {
     color: #fff;
     border-radius: 20px;
     padding: 5px;
+}
+
+#conteudo {
+    width: 980px;
+    background-color: rgb(41, 40, 40);
+    margin: 0px auto;
+    position: relative;
+}
+
+#foto_principal {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+
+h2{
+   color: white;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.secao {
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    list-style: 1.5em;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 10px;
+    color: white;
+}
+
+table {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
 }
