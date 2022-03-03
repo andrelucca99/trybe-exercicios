@@ -7,29 +7,32 @@ body {
     background-color: #403D58;
 }
 
-#cabecalho {
-    background-color: yellow;
-}
 h1 {
     text-align: center;
+    color: white;
+    margin-top: 20px;
 }
 
-nav {
-    margin: 0px auto;
+#navegacao {
+    padding: 10px;
+    margin: 20px;
+    float: right;
 }
 
 li {
     display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 a {
-    color: rgb(119, 115, 115);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 a:hover {
-    background-color: black;
-    color: #fff;
+    background-color: white;
+    color: #000;
     border-radius: 20px;
     padding: 5px;
 }
@@ -42,9 +45,10 @@ a:hover {
 }
 
 #foto_principal {
-    width: 300px;
-    height: 200px;
+    width: 700px;
+    height: 300px;
     padding: 20px;
+    margin: 10px 0px 20px 150px;
 }
 
 h2{
@@ -62,6 +66,7 @@ h3 {
 
 .secao {
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 p {
@@ -75,7 +80,33 @@ p {
 }
 
 table {
+    display: block;
     padding: 10px;
     color: white;
     font-size: 20px;
+    margin-left: 150px;
+}
+
+#foto_cientifica {
+    margin-left: 600px;
+    margin-top: -200px;
+}
+
+#foto_visao {
+    width: 50%;
+    height: 25em;
+    float: left;
+    padding: 10px;
+    background-size: cover;
+}
+
+#foto_visao2 {
+    width: 300px;
+    height: 200px;
+    float: right;
+    padding: 10px;
+}
+
+#rodape p{
+    text-align: center;
 }
