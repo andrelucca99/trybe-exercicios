@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #403D58;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+#navegacao {
+    padding: 10px;
+    margin: 20px;
+    float: right;
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#conteudo {
+    width: 980px;
+    background-color: rgb(41, 40, 40);
+    margin: 0px auto;
+    position: relative;
+}
+
+#foto_principal {
+    width: 700px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px 0px 20px 150px;
+}
+
+h2{
+   color: white;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.secao {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    list-style: 1.5em;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 10px;
+    color: white;
+}
+
+table {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+#foto_cientifica {
+    margin-left: 600px;
+    margin-top: -200px;
+}
+
+#foto_visao {
+    width: 50%;
+    height: 25em;
+    float: left;
+    padding: 10px;
+    background-size: cover;
+}
+
+#foto_visao2 {
+    width: 300px;
+    height: 200px;
+    float: right;
+    padding: 10px;
+}
+
+#rodape p{
+    text-align: center;
+}
