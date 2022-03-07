@@ -1,6 +1,6 @@
-const num1 = 202;
-const num2 = 75;
-const num3 = 50;
+const num1 = 160;
+const num2 = 450;
+const num3 = 200;
 
 if (num1 > num2 && num1 > num3) {
     console.log(num1);
