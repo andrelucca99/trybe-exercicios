@@ -1,8 +1,11 @@
-const valor1 = 22;
-const valor2 = 15;
+const num1 = 202;
+const num2 = 75;
+const num3 = 50;
 
-if (valor1 > valor2) {
-    console.log(valor1);
+if (num1 > num2 && num1 > num3) {
+    console.log(num1);
+} else if (num2 > num1 && num2 > num3){
+    console.log(num2);
 } else {
-    console.log(valor2);
+    console.log(num3);
 }
