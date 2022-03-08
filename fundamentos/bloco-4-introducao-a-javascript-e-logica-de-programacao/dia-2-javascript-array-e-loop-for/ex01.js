@@ -5,5 +5,8 @@ for (let i = 0; i < numbers.length; i += 1) {
     let numero = numbers[i];
 
     total = total + numero;
-    console.log(total);
 }
+
+let media = total / numbers.length;
+
+console.log(media);
