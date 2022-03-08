@@ -10,3 +10,9 @@ for (let i = 0; i < numbers.length; i += 1) {
 let media = total / numbers.length;
 
 console.log(media);
+
+if (media > 20) {
+    console.log("valor maior que 20");
+} else {
+    console.log("valor menor ou igual a 20");
+}
