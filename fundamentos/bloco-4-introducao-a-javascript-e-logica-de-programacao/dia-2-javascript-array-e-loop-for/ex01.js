@@ -1,14 +1,12 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27, 1];
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+let divisao = 0;
 
-let numeroMenor = numbers.length;
+for (let i = 0; i < numeros.length; i += 1) {
+    
+    let divisor = numeros[i];
 
-for (let i = 0; i < numbers.length; i += 1) {
+    divisao = divisor / 2;
 
-    let numero = numbers[i];
-
-    if (numero < numeroMenor) {
-        numeroMenor = numero;
-    }
-} 
-
-console.log(numeroMenor);
+    
+    console.log(divisao);
+}
