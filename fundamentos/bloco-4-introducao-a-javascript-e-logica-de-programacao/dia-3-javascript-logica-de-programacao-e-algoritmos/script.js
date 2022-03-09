@@ -1,7 +1,8 @@
-let fatorial = 10;
-let resultado = 1;
+let word = 'desenvolva';
+let revert = '';
 
-for (let i = fatorial; i > 1; i--) {
-    resultado *= i;
+for (let i = 0; i < word.length; i += 1) {
+    revert += word[word.length - 1 - i];
 }
-console.log(resultado);
+
+console.log(revert);
