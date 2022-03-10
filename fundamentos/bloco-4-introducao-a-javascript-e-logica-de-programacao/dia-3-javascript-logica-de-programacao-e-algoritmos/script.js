@@ -1,8 +1,19 @@
-let word = 'desenvolva';
-let revert = '';
+let array = ['java', 'javascript', 'python', 'html', 'css'];
 
-for (let i = 0; i < word.length; i += 1) {
-    revert += word[word.length - 1 - i];
+let maiorPalavra = array[0];
+let menorPalavra = array[0];
+
+for (let i = 0; i < array.length; i += 1) {
+    if (array[i].length > maiorPalavra.length) {
+        maiorPalavra = array[i];
+    }
 }
 
-console.log(revert);
+for (let i = 0; i < array.length; i += 1) {
+    if (array[i].length < menorPalavra.length) {
+        menorPalavra = array[i];
+    }
+}
+
+console.log('A maior palavra é: ' + maiorPalavra);
+console.log('A menor palavra é: ' + menorPalavra);
