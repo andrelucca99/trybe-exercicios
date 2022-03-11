@@ -1,11 +1,11 @@
-function indiceMenor(numero) {
-  let indiceDoMenor = 0;
+function maiorNome(nomes) {
+  let nomeDoMaior = nomes[0];
 
-  for (let indice in numero) {
-    if (numero[indiceDoMenor] > numero[indice]) {
-      indiceDoMenor = indice;
+  for (let index in nomes) {
+    if (nomeDoMaior.length < nomes[index].length) {
+      nomeDoMaior = nomes[index];
     }
   }
-  return indiceDoMenor;
+  return nomeDoMaior;
 }
-console.log(indiceMenor([2, 4, 6, 7, 10, 0, -3]));
+console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
