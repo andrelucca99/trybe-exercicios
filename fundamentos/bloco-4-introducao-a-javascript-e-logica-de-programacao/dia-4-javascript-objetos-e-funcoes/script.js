@@ -1,10 +1,11 @@
-function verifica(palindromo) {
-  for (index in palindromo) {
-    if (palindromo[index] !== palindromo[(palindromo.length - 1) - index]) {
-      return false
+function indiceMaior(numero) {
+  let indicedoMaior = 0;
+
+  for (let indice in numero) {
+    if (numero[indicedoMaior] < numero[indice]) {
+      indicedoMaior = indice;
     }
   }
-    return true
+  return indicedoMaior;
 }
-
-console.log(verifica('arara'));
+console.log(indiceMaior([2, 3, 6, 7, 10, 1]));
