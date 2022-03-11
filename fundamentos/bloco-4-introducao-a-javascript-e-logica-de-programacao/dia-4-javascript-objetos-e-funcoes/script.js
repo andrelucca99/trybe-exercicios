@@ -1,11 +1,11 @@
-function indiceMaior(numero) {
-  let indicedoMaior = 0;
+function indiceMenor(numero) {
+  let indiceDoMenor = 0;
 
   for (let indice in numero) {
-    if (numero[indicedoMaior] < numero[indice]) {
-      indicedoMaior = indice;
+    if (numero[indiceDoMenor] > numero[indice]) {
+      indiceDoMenor = indice;
     }
   }
-  return indicedoMaior;
+  return indiceDoMenor;
 }
-console.log(indiceMaior([2, 3, 6, 7, 10, 1]));
+console.log(indiceMenor([2, 4, 6, 7, 10, 0, -3]));
