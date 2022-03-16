@@ -129,6 +129,12 @@
       let title = document.querySelector('h1');
       title.className = 'title';
       
+      // 1.2 - Adicione a classe description nas 3 tags h3 criadas
+      let descriptionH3 = document.getElementsByTagName('h3');
+      for (let i = 0; i < 3; i += 1) {
+        descriptionH3[i].className = 'description';
+      }
+
     </script>
 </body>
 
