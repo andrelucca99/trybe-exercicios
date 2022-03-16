@@ -131,7 +131,7 @@
       
       // 1.2 - Adicione a classe description nas 3 tags h3 criadas
       let descriptionH3 = document.getElementsByTagName('h3');
-      for (let i = 0; i < 3; i += 1) {
+      for (let i = 0; i <= 3; i += 1) {
         descriptionH3[i].className = 'description';
       }
       
@@ -142,6 +142,10 @@
       // 1.4 - Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
       const rightContentCenter = document.getElementsByClassName('right-content')[0];
       rightContentCenter.style.marginRight='auto';
+
+      // 1.5 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+      let corDeFundoDoPai = document.getElementsByClassName('center-content')[0];
+      corDeFundoDoPai.parentNode.style.background = 'green';
     </script>
 </body>
 
