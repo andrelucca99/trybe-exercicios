@@ -106,7 +106,7 @@
 
         let ul = document.createElement('ul');
         let numeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'sexta', 'sete', 'oito', 'nove', 'dez'];
-        
+
         for (let i = 0; i < numeros.length; i += 1) {
             let li = document.createElement('li');
             li.innerText = numeros[i];
@@ -114,6 +114,14 @@
         }
 
         rightContent.appendChild(ul);
+
+      // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+        
+        for (let i = 0; i <= 3; i += 1){
+            let h3 = document.createElement('h3');
+            h3.innerHTML = i;
+            mainContent.appendChild(h3);
+        }
     </script>
 </body>
 
