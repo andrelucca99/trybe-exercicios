@@ -150,3 +150,16 @@ function createDaysOfTheWeek() {
     };
 
     ListaDeTarefas('Projeto:');
+
+    //Exercício 8
+
+    function divTarefas(cor) {
+        let tarefa = document.querySelector('.my-tasks');
+        let newTarefa = document.createElement('div');
+
+        newTarefa.className = 'task';
+        newTarefa.style.backgroundColor = cor;
+        tarefa.appendChild(newTarefa);
+    };
+
+    divTarefas('green');
