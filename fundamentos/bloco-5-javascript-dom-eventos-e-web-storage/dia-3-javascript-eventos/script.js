@@ -15,6 +15,8 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
 
+  // Exercício 1
+
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
   function mesDeDezembro() {
@@ -42,6 +44,8 @@ function createDaysOfTheWeek() {
 
   mesDeDezembro();
 
+  //Exercício 2
+
   function diasDeFeriado(button) {
       let btn = document.querySelector('.buttons-container');
       let newBtn = document.createElement('button');
@@ -53,3 +57,25 @@ function createDaysOfTheWeek() {
   }
 
   diasDeFeriado('Feriados');
+
+  //Exercício 3
+
+  function mudaHoliday() {
+      let btnHoliday = document.getElementById('btn-holiday');
+      let diasHoliday = document.querySelectorAll('.holiday');
+      let background = 'rgb(238,238,238)';
+      let newColor = 'white';
+
+      btnHoliday.addEventListener('click', function() {
+
+        for (let i = 0; i < diasHoliday.length; i += 1) {
+            if (diasHoliday[i].style.backgroundColor === newColor) {
+                diasHoliday[i].style.backgroundColor = background;
+            } else {
+                diasHoliday[i].style.backgroundColor = newColor;
+            }
+        }
+      })
+    };
+
+    mudaHoliday();
