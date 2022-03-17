@@ -112,5 +112,28 @@ function createDaysOfTheWeek() {
             }
         })
     };
-
+    
     mudaSexta();
+
+    //Exercício 6 
+
+    function zoomMouse() {
+        let dias = document.getElementById('days');
+
+        dias.addEventListener('mouseover', function (zoom) {
+            zoom.target.style.fontSize = '30';
+            zoom.target.style.fontWeight = '600';
+        })
+    };
+
+    function diminiZoom() {
+        let dias = document.getElementById('days');
+
+        dias.addEventListener('mouseout', function(diminui) {
+            diminui.target.style.fontSize = '20';
+            diminui.target.style.fontWeight = '200';
+        })
+    };
+
+    zoomMouse();
+    diminiZoom();
