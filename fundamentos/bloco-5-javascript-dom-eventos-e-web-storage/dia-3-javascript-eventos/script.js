@@ -79,3 +79,17 @@ function createDaysOfTheWeek() {
     };
 
     mudaHoliday();
+
+  //Exercício 4 
+  
+  function buttonSexta(button) {
+      let btn = document.querySelector('.buttons-container');
+      let newBtn = document.createElement('button');
+      let btnId = 'btn-friday';
+
+      newBtn.innerHTML = button;
+      newBtn.id = btnId;
+      btn.appendChild(newBtn);    
+    };
+
+    buttonSexta('Sexta-feira');
