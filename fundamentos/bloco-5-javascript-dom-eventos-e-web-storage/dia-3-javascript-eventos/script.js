@@ -163,3 +163,20 @@ function createDaysOfTheWeek() {
     };
 
     divTarefas('green');
+
+    //Exercício 9
+
+    function divTarefasClick() {
+        let selecTarefa = document.getElementsByClassName('task selected');
+        let tarefas = document.querySelector('.task');
+
+        tarefas.addEventListener('click', function(evento) {
+            if (selecTarefa.length === 0) {
+                evento.target.className = 'task selected';
+            } else {
+                evento.target.className = 'task';
+            }
+        });
+    };
+
+    divTarefasClick();
