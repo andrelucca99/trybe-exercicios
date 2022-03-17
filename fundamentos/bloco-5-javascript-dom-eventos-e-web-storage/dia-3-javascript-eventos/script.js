@@ -41,3 +41,15 @@ function createDaysOfTheWeek() {
   }
 
   mesDeDezembro();
+
+  function diasDeFeriado(button) {
+      let btn = document.querySelector('.buttons-container');
+      let newBtn = document.createElement('button');
+      let btnId = 'btn-holiday';
+
+      newBtn.innerHTML = button;
+      newBtn.id = btnId;
+      btn.appendChild(newBtn);
+  }
+
+  diasDeFeriado('Feriados');
