@@ -93,3 +93,24 @@ function createDaysOfTheWeek() {
     };
 
     buttonSexta('Sexta-feira');
+
+    //Exercício 5
+    
+    function mudaSexta() {
+        let btnSexta = document.getElementById('btn-friday');
+        let diasSexta = document.querySelectorAll('.friday');
+        let background = 'rgb(238,238,238)';
+        let newColor = 'white';
+
+        btnSexta.addEventListener('click', function () {
+            for (let i = 0; i < diasSexta.length; i += 1) {
+                if (diasSexta[i].style.backgroundColor === newColor) {
+                    diasSexta[i].style.backgroundColor = background;
+                } else {
+                    diasSexta[i].style.backgroundColor = newColor;
+                }
+            }
+        })
+    };
+
+    mudaSexta();
