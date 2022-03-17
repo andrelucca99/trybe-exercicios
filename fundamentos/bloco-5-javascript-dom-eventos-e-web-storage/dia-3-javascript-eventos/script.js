@@ -137,3 +137,16 @@ function createDaysOfTheWeek() {
 
     zoomMouse();
     diminiZoom();
+
+    //Exercício 7
+
+    function ListaDeTarefas(tarefa) {
+        let newTarefa = document.querySelector('.my-tasks');
+        let nomeTarefa = document.createElement('span');
+
+        nomeTarefa.innerHTML = tarefa;
+        newTarefa.append(nomeTarefa);
+    
+    };
+
+    ListaDeTarefas('Projeto:');
