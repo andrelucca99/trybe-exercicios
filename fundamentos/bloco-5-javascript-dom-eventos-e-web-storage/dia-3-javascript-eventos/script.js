@@ -180,3 +180,24 @@ function createDaysOfTheWeek() {
     };
 
     divTarefasClick();
+
+    //Exercício 10
+
+    function pintaDia() {
+        let selecTarefa = document.getElementsByClassName('task selected');
+        let dias = document.getElementById('days');
+        let divTarefa = document.querySelector('.task');
+        let corTarefa = divTarefa.style.backgroundColor;
+
+        dias.addEventListener('click', function(evento) {
+            let eventoTarget = evento.target.style.color;
+            if (selecTarefa.length > 0 && eventoTarget !== corTarefa) {
+                let color = selecTarefa[0].style.backgroundColor;
+                evento.target.style.color = color;
+            } else if (eventoTarget === corTarefa && selecTarefa.length !== 0) {
+                evento.target.style.color = 'rgb(119,119,119)';
+            }
+        });
+    };
+
+    pintaDia();
