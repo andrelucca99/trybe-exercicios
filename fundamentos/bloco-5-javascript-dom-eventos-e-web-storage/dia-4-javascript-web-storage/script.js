@@ -13,6 +13,14 @@ window.onload = function() {
     localStorage.setItem('fontColor', color);
   }
 
+  function tamanhoFont (size) {
+    let p = document.querySelectorAll('.paragrafo');
+    for (let i = 0; i < p.length; i += 1) {
+      p[i].style.fontSize = size; 
+    }
+    localStorage.setItem('fontSize', size);
+  }
+
   // evento addEventListener
 
   let backgroundButtons = document.querySelectorAll('#background-color>button');
@@ -29,6 +37,13 @@ window.onload = function() {
     })
   }
 
+  let sizeButtons = document.querySelectorAll('#font-size > button');
+  for (let i = 0; i < sizeButtons.length; i += 1) {
+    sizeButtons[i].addEventListener('click', function(event) {
+      tamanhoFont(event.target.innerHTML);
+    })
+  }
+
   // executa a função
 
   function executa() {
@@ -37,6 +52,9 @@ window.onload = function() {
 
     let fontColor = localStorage.getItem('fontSize');
     if (fontColor) corDaFont(fontColor);
+
+    let fontSize = localStorage.getItem('fontSize');
+    if (fontSize) tamanhoFont(fontSize);
   }
   executa()
 
