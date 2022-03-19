@@ -29,6 +29,14 @@ window.onload = function() {
     localStorage.setItem('lineHeight', height);
   }
 
+  function addFontFamily (family) {
+    let p = document.querySelectorAll('.paragrafo');
+    for (let i = 0; i < p.length; i += 1) {
+      p[i].style.fontFamily = family;
+    }
+    localStorage.setItem('font-family', family);
+  }
+
   // evento addEventListener
 
   let backgroundButtons = document.querySelectorAll('#background-color>button');
@@ -59,6 +67,13 @@ window.onload = function() {
     })
   }
 
+  let familyButtons = document.querySelectorAll('#font-family > button');
+    for (let i = 0; i < familyButtons.length; i += 1) {
+      familyButtons[i].addEventListener('click', function(event) {
+        addFontFamily(event.target.innerHTML);
+      })
+    }
+
   // executa a função
 
   function executa() {
@@ -73,6 +88,9 @@ window.onload = function() {
 
     let lineHeight = localStorage.getItem('lineHeight');
     if (lineHeight) lineHeights(lineHeight);
+
+    let fontFamily = localStorage.getItem('fontFamily');
+    if (fontFamily) addFontFamily(fontFamily);
   }
   executa()
 
