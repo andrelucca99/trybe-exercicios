@@ -21,6 +21,14 @@ window.onload = function() {
     localStorage.setItem('fontSize', size);
   }
 
+  function lineHeights (height) {
+    let p = document.querySelectorAll('.paragrafo');
+    for (let i = 0; p.length; i += 1) {
+      p[i].style.lineHeight = height;
+    }
+    localStorage.setItem('lineHeight', height);
+  }
+
   // evento addEventListener
 
   let backgroundButtons = document.querySelectorAll('#background-color>button');
@@ -44,6 +52,13 @@ window.onload = function() {
     })
   }
 
+  let lineButtons = document.querySelectorAll('#line-height > button');
+  for (let i = 0; i < lineButtons.length; i += 1) {
+    lineButtons[i].addEventListener('click', function(event) {
+      lineHeights(event.target.innerHTML);
+    })
+  }
+
   // executa a função
 
   function executa() {
@@ -55,6 +70,9 @@ window.onload = function() {
 
     let fontSize = localStorage.getItem('fontSize');
     if (fontSize) tamanhoFont(fontSize);
+
+    let lineHeight = localStorage.getItem('lineHeight');
+    if (lineHeight) lineHeights(lineHeight);
   }
   executa()
 
