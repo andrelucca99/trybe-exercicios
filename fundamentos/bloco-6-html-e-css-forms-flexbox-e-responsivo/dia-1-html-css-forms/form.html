@@ -7,7 +7,7 @@
     <title>Formulário TrybeTrip</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="" method="GET">
         <fieldset>
             <label for="nome">Nome:
                 <input type="text" name="input-name" id="nome" minlength="10" maxlength="40">
@@ -47,8 +47,15 @@
             <br>
             <input type="checkbox" name="imagens-ferias" id="confirm-imagens">
             <label for="confirm-imagens">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-            
+            <br>
+            <br>
+    
+            <button type="submit" id="btn-enviar" id="submitBtn">Enviar</button>
+    
+            <button type="button" id="limpa-btn">Apagar</button>
         </fieldset>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
