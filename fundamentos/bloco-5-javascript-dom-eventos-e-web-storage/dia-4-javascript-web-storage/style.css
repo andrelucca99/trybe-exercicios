@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo {
+    width: auto;
+    height: 700px;
+}
+
+#cabecalho {
+    width: auto;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#cabecalho span {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 15pt;
+    margin-left: 10px;
+}
+
+#cabecalho button {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#cabecalho button:hover {
+    background-color: rgb(124, 122, 122);
+    color: white;
+}
+
+#background-color {
+    display: inline;
+}
+
+#font-color {
+    display: inline;
+}
+
+#font-size {
+    display: inline;
+}
+
+#line-height {
+    display: inline;
+}
+
