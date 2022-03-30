@@ -36,14 +36,43 @@ html {
     header h2 {
         padding: 50px;
     }
+
+    footer h3 {
+        text-align: center;
+    }
 }
 
 /*layout medio*/
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: yellow;
+        background-color: #fff;
     }
+
+    .container {
+        flex-direction: column;
+    }
+
+    header p {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    p {
+        padding: 20px;
+        text-align: center;
+        max-width: 100%;
+        line-height: 1.7em;
+    }
+
+    header h2 {
+        padding: 50px;
+    }
+
+    footer h3 {
+        text-align: center;
+    }
+    
 }
 
 /*layout grande*/
