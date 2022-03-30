@@ -13,12 +13,17 @@
     background-color: #5C687C;
     display: flex;
     flex-direction: row-reverse;
+    height: 50px;
   }
   
   .logo-container {
     display: flex;
     justify-content: center;
     flex-basis: 268px;
+  }
+
+  .logo-container:hover  {
+    opacity: 0.5;
   }
   
   .menu-container {
@@ -37,9 +42,14 @@
   .menu-container li {
     color: white;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
     list-style: none;
     margin-right: 10px;
+  }
+
+  .menu-container li:hover{
+      opacity: 0.5;
+      cursor: pointer;
   }
 
   /*Part 2*/
@@ -77,6 +87,13 @@
     margin: 10px;
     flex-basis: 16%;
     flex-grow: 1;
+  }
+
+  .card-container div:hover {
+      border-radius: 10px;
+      opacity: 1;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
   }
   
   .aside-container {
