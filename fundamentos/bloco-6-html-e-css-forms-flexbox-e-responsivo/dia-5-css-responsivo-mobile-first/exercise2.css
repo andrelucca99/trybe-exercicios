@@ -7,14 +7,34 @@ html {
   }
 
 .container {
-    
+    display: flex;
 }
 
 /*layout pequeno*/
 
 @media screen and (max-width: 600px) {
     body {
-        background-color: red;
+        background-color: rgb(240, 230, 205);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    header p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    p {
+        padding: 10px;
+        text-align: justify;
+        max-width: 100%;
+        line-height: 1.5em;
+    }
+
+    header h2 {
+        padding: 50px;
     }
 }
 
