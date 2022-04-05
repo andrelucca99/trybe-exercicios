@@ -63,3 +63,15 @@ console.log(totalEstudents(allLessons));
 
 const valueKeys = (obj, number) => Object.values(obj)[number];
 console.log(valueKeys);
+
+// 8 - Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+
+const verificaPar = (obj, key, value) => {
+  const arr = Object.entries(obj);
+  let isEqual = false;
+  for (let index in arr) {
+    if (arr[index][0] === key && arr[index][1] === value) isEqual = true;
+  }
+  return isEqual;
+};
+console.log(verificaPar(lesson2,'professor','Carlos'));
