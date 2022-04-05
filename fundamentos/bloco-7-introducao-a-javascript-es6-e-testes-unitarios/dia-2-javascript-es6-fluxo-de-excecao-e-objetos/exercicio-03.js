@@ -30,3 +30,8 @@ turnoNoite(lesson2, 'turno', 'noite');
 
 const listKeys = (obj) => Object.keys(obj);
 console.log(listKeys(lesson1));
+
+// 3 - Crie uma função para mostrar o tamanho de um objeto.
+
+const sizeObj = (obj) => Object.keys(obj).length;
+console.log(sizeObj(lesson1));
