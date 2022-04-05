@@ -45,3 +45,16 @@ console.log(listValues(lesson1));
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 console.log(allLessons);
+
+// 6 - Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+
+const totalEstudents = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+  for (index in array) {
+    total += obj[array[index]].numeroEstudantes;
+  }
+  return total;
+};
+
+console.log(totalEstudents(allLessons));
