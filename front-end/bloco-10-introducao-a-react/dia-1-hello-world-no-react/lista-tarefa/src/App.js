@@ -1,22 +1,15 @@
-import './App.css';
+import React from 'react';
+import Header from './Header';
+import './App.css'
 
-const tarefas = ['Acordar', 'Tomar café', 'Estudar', 'Almoçar']
-
-function App() {
-  const task = (value) => {
+class App extends React.Component {
+  render() {
     return (
-      <li>{value}</li>
+      <div>
+        <Header />
+      </div>
     );
   }
-
-  return (
-    <div className="App">
-      Hello, world
-      <div>
-        {tarefas.map((tarefa) => task(tarefa))}
-      </div>
-    </div>
-  );
 }
 
 export default App;
