@@ -1,15 +1,21 @@
 const fs = require('fs').promises;
 
-async function readAll() {
+async function getPersonagem(id) {
     const fileContent = await fs.readFile('./simpsons.json', 'utf-8');
     const simpsons = JSON.parse(fileContent);
-    const strings = simpsons.map(({ id, name }) => `${id} - ${name}`);
+    
+    const chosenSimpson = simpsons.find((simpson) => Number(simpson.id) === id);
 
-    strings.forEach((string) => console.log(string));
+    if(!chosenSimpson) {
+        throw new Error('id não encontrado');
+    }
+
+    return chosenSimpson;
 }
 
 async function main() {
-    await readAll();
+    const simpson = await getPersonagem(2);
+    console.log(simpson);
 }
 
 main();
