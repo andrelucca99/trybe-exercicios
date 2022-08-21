@@ -1,5 +1,4 @@
-const weight = 57;
-const height = 170;
+const readline = require('readline-sync');
 
 const calculaBMI = (weight, height) => {
     console.log(`weight: ${weight}, height: ${height}`);
@@ -13,6 +12,9 @@ const calculaBMI = (weight, height) => {
 }
 
 const main = () => {
+    const weight = readline.questionInt("What' your weight?");
+    const height = readline.questionInt("What' your height?");
+
     const bmi = calculaBMI(weight, height);
 
     console.log(`BMI: ${bmi.toFixed(2)}`);
