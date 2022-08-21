@@ -2,11 +2,13 @@ const fs = require('fs').promises;
 
 async function addPersonagem() {
     const fileContent = await fs.readFile('./simpsons.json', 'utf-8');
-    const simpsonsFamily = JSON.parse(fileContent);
+    const simpsons = JSON.parse(fileContent);
     
-    simpsonsFamily.push({ id: '8', name: 'Nelson Muntz' });
+    const filterPersonagem = simpsons.filter((simpson) => simpson.id !== '8');
 
-    await fs.writeFile('./simpsons.json', JSON.stringify(simpsonsFamily));
+    const addMaggie = filterPersonagem.concat([{ id: '15', name: 'Maggie Simpson' }]);
+
+    return fs.writeFile('./simpsons.json', JSON.stringify(addMaggie));
 }
 
 async function main() {
