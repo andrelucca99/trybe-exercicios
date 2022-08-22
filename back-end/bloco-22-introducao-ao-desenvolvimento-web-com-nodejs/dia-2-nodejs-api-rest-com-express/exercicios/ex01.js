@@ -4,7 +4,6 @@
 
 // 422 - O codigo de resposta HTTP 422 Unprocessable Entity indica que o servidor entende o tipo de conteúdo da entidade da requisição, e a sintaxe da requisição esta correta, mas não foi possível processar as instruções presentes.
 
-
 // Para que é usado o código de status 401?
 
 // 401 - Na prática, isso significa que o site que você está tentando acessar não carregará até que você efetue login com um ID de usuário e uma senha válida.
