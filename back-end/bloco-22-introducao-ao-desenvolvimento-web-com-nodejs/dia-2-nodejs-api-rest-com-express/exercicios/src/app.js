@@ -8,4 +8,8 @@ app.get('/myActivities/:id', (req, res) => {
     res.status(200).json(atividade);
 });
 
+app.get('/myActivities', (req, res) => {
+    res.status(200).json({ atividades });
+})
+
 module.exports = app;
